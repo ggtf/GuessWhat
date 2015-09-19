@@ -1,15 +1,13 @@
 package com.ggtf.guesswhat.Loaders;
 
-import android.content.AsyncTaskLoader;
+
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
+import android.support.v4.content.AsyncTaskLoader;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
@@ -64,5 +62,10 @@ public class GuessLoader extends AsyncTaskLoader<String> {
             e.printStackTrace();
         }
         return json;
+    }
+
+    @Override
+    protected void onStartLoading() {
+        forceLoad();
     }
 }
