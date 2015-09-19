@@ -4,6 +4,16 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff2203"
+            android:text="@string/label_enigma"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="10dp"
+            />
 
     <TextView
             android:id="@+id/title"
@@ -13,6 +23,7 @@
             android:textStyle="bold|italic"
             android:textSize="25sp"
             android:textColor="#ffff8927"
+            android:layout_marginTop="20sp"
             />
     <TextView
             android:id="@+id/answer"
@@ -23,6 +34,10 @@
             android:textSize="25sp"
             android:layout_marginTop="30dp"
             android:textColor="#ffff8927"
+            android:visibility="gone"
             />
+        <include
+                layout="@layout/button_layout"/>
+
 </LinearLayout>
 

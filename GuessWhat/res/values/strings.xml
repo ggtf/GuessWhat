@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">GuessWhat</string>
+    <string name="label_enigma">谜题</string>
+    <string name="show_answer">查看谜题</string>
+    <string name="next">下一题</string>
 </resources>
